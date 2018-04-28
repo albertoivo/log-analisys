@@ -40,7 +40,7 @@ def connect():
 
         print('\nWhich days more than 1% of requests resulted in errors?\n')
         for row in rows:
-            print ('\t%s %% - %s' % (row[0], row[1]))
+            print('\t%s %% - %s' % (row[0], row[1]))
 
         # close the communication with the PostgreSQL
         cur.close()

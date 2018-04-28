@@ -34,7 +34,7 @@ def connect():
 
         print('\nWho are the authors of most popular articles of all time?\n')
         for row in rows:
-            print ('\t%s - %s views' % (row[0], row[1]))
+            print('\t%s - %s views' % (row[0], row[1]))
 
         # close the communication with the PostgreSQL
         cur.close()
