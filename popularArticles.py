@@ -5,16 +5,6 @@ from config import config
 import psycopg2
 
 
-query = """
-    SELECT a.title, count(a.title) AS quantity
-      FROM log l, articles a
-     WHERE substring(l.path, 10) = a.slug
-  GROUP BY a.title
-  ORDER BY quantity DESC
-     LIMIT 3
-"""
-
-
 def connect():
     """ What are the three most popular articles of all time? """
 
@@ -30,7 +20,7 @@ def connect():
         cur = conn.cursor()
 
         # execute a statement
-        cur.execute(query)
+        cur.execute(open('popularArticles.sql', 'r').read())
         rows = cur.fetchall()
 
         print('\nWhat are the three most popular articles of all time?\n')

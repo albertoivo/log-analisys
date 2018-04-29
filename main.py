@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import error as error
 import popularAuthors as authors
 import popularArticles as articles

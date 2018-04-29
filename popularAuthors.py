@@ -5,15 +5,6 @@ from config import config
 import psycopg2
 
 
-query = """
-  SELECT author.name, count(author.name) AS Views
-    FROM log l, articles a JOIN authors author ON author.id = a.author
-   WHERE substring(l.path, 10) = a.slug
-GROUP BY author.name
-ORDER BY Views DESC
-"""
-
-
 def connect():
     """ Who are the authors of most popular articles of all time? """
 
@@ -29,7 +20,7 @@ def connect():
         cur = conn.cursor()
 
         # execute a statement
-        cur.execute(query)
+        cur.execute(open('./popularAuthors.sql', 'r').read())
         rows = cur.fetchall()
 
         print('\nWho are the authors of most popular articles of all time?\n')
