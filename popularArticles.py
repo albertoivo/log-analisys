@@ -20,7 +20,7 @@ def connect():
         cur = conn.cursor()
 
         # execute a statement
-        cur.execute(open('popularArticles.sql', 'r').read())
+        cur.execute(open('./sql/popularArticles.sql', 'r').read())
         rows = cur.fetchall()
 
         print('\nWhat are the three most popular articles of all time?\n')

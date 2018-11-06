@@ -20,7 +20,7 @@ def connect():
         cur = conn.cursor()
 
         # execute a statement
-        cur.execute(open('error.sql', 'r').read())
+        cur.execute(open('./sql/error.sql', 'r').read())
         rows = cur.fetchall()
 
         print('\nWhich days more than 1% of requests resulted in errors?\n')
