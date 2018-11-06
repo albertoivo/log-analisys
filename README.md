@@ -20,20 +20,21 @@ This is a project for Udacity Course Nanodegree Full Stack Web Developer.
 
 ## Prerequisites
 
-1.  apt-get -qqy install python3 python3-pip
-2.  pip3 install --upgrade pip
-3.  pip3 install psycopg2
+1.  Python 3
+2.  PIP
 
 ## Quick start
 
 1. Fork it
 2. Clone it
-3. `cd log-analysis`
-4. `python3 main.py`
+3. `cd log-analysis-fullstacknd`
+4. `pip install -r requirements.txt`
+5. `python3 main.py`
 
 ## Developed with
 
 * [Python 3](https://www.python.org/)
+* [Psycopg](http://initd.org/psycopg/)
 
 ## Contributing
 
