@@ -29,7 +29,7 @@ This is a project for Udacity Course Nanodegree Full Stack Web Developer.
 2. Clone it
 3. `cd log-analysis-fullstacknd`
 4. `pip install -r requirements.txt`
-5. `python3 main.py`
+5. `python3 main.py` or `python3 main2.py`
 
 ## Developed with
 
