@@ -1,10 +1,18 @@
 #!/usr/bin/python3
 
-import sql_queries.error as error
-import sql_queries.popularAuthors as authors
-import sql_queries.popularArticles as articles
+from dbaccesses import connect
+
+sql_dict = {
+    'sql/error.sql':
+        'Which days more than 1% of requests resulted in errors?',
+    'sql/popularArticles.sql':
+        'What are the three most popular articles of all time?',
+    'sql/popularAuthors.sql':
+        'Who are the authors of most popular articles of all time?'}
 
 if __name__ == '__main__':
-    articles.connect()
-    authors.connect()
-    error.connect()
+    for sql in sql_dict.items():
+        rows = connect(sql[0])
+        print("\n{}\n".format(sql[1]))
+        for row in rows:
+            print("\t{} - {}".format(row[0], row[1]))

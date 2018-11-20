@@ -1,3 +1,5 @@
+-- Which days more than 1% of requests resulted in errors?
+
 SELECT
   ROUND(CAST(float8(SUM("404 NOT FOUND") * 100.0 / COUNT(*)) AS numeric), 2),
   COALESCE(to_char(TIME, 'Month DD, YYYY'), '')

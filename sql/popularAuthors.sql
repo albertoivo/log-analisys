@@ -1,3 +1,5 @@
+-- Who are the authors of most popular articles of all time?
+
   SELECT author.name, count(author.name) AS Views
     FROM log l, articles a JOIN authors author ON author.id = a.author
    WHERE l.path = '/article/' || a.slug

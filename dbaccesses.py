@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 from config import config
-
 import psycopg2
 
 
@@ -20,6 +19,8 @@ def connect(sql_file):
 
         # execute a statement
         cur.execute(open(sql_file, 'r').read())
+
+        # Fetch all rows of a query result, returning them as a list of tuples
         rows = cur.fetchall()
 
         # close the communication with the PostgreSQL
