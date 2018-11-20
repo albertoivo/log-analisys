@@ -20,25 +20,37 @@ This is a project for Udacity Course Nanodegree Full Stack Web Developer.
 
 ## Prerequisites
 
-1.  Python 3
-2.  PIP
+1. Python 3
+2. PIP
+3. Docker
+4. Docker Compose
 
 ## Quick start
 
-1. Fork it
-2. Clone it
+### Preparing Database with Docker
+
+1. Clone the Docker repo: `https://github.com/albertoivo/log-analysis-docker-fullstacknd.git`
+2. `cd log-analysis-docker-fullstacknd`
+3. `docker-compose up`
+
+_The steps above will clone a repo with a the database and a `docker-compose.yml`. When you up the YML for the first time, it will download an PostgreSQL iamge and make a databse dump necessary for this project._
+
+### Running the app
+
+2. Clone the repo: `https://github.com/albertoivo/log-analysis-fullstacknd.git`
 3. `cd log-analysis-fullstacknd`
 4. `pip install -r requirements.txt`
-5. `python3 main.py` or `python3 main2.py`
+5. `python3 main.py`
 
 ## Developed with
 
 * [Python 3](https://www.python.org/)
-* [Psycopg](http://initd.org/psycopg/)
+* [Psycopg 2](http://initd.org/psycopg/)
+* [Docker](https://www.docker.com/)
 
 ## Contributing
 
-We welcome contributions to log-analysis!
+We welcome contributions to this project!
 
 -   ⇄ Pull requests and ★ Stars are always welcome.
 

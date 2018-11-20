@@ -5,6 +5,10 @@ import psycopg2
 
 
 def connect(sql_file):
+    """
+        Data Access to any SQL files. It connects to database,
+        execute the query in 'sql_file' and fetches all rows.
+    """
 
     conn = None
     try:
