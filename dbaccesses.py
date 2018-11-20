@@ -12,10 +12,10 @@ def connect(sql_file):
 
     conn = None
     try:
-        # read connection parameters
+        # read connection parameters form the database.ini
         params = config()
 
-        # connect to the PostgreSQL server
+        # connect to the PostgreSQL server with the database.ini info
         conn = psycopg2.connect(**params)
 
         # create a cursor

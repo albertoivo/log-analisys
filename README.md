@@ -33,7 +33,7 @@ This is a project for Udacity Course Nanodegree Full Stack Web Developer.
 2. `cd log-analysis-docker-fullstacknd`
 3. `docker-compose up`
 
-_The steps above will clone a repo with a the database and a `docker-compose.yml`. When you up the YML for the first time, it will download an PostgreSQL iamge and make a databse dump necessary for this project._
+_The steps above will clone a repo with a database and a `docker-compose.yml`. When you up the YML for the first time, it will download an PostgreSQL image and make a database dump necessary for this project. Please, read the README.md of this docker project._
 
 ### Running the app
 
@@ -56,7 +56,7 @@ We welcome contributions to this project!
 
 ## Author
 
-* **Alberto Ivo Vieira** - [Github](https://github.com/albertoivo)
+* **Alberto Ivo Vieira** - [Github](https://github.com/albertoivo) | [LinkedIn](https://www.linkedin.com/in/alberto-ivo-vieira/)
 
 ## License
 
