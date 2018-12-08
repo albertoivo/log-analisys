@@ -29,8 +29,8 @@ This is a project for Udacity Course Nanodegree Full Stack Web Developer.
 
 ### Preparing Database with Docker
 
-1. Clone the Docker repo: `https://github.com/albertoivo/log-analysis-docker-fullstacknd.git`
-2. `cd log-analysis-docker-fullstacknd`
+1. Clone the Docker repo: `git clone https://github.com/albertoivo/docker-fullstacknd.git`
+2. `cd docker-fullstacknd`
 3. `docker-compose up`
 
 _The steps above will clone a repo with a database and a `docker-compose.yml`. When you up the YML for the first time, it will download an PostgreSQL image and make a database dump necessary for this project. Please, read the README.md of this docker project._
